@@ -1,24 +1,96 @@
-<! doctype HTML> 
+<!DOCTYPE html>
 <html>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script src = "https://aframe.io/releases/0.9.2/aframe.min.js"> </script> 
-<script src = "https://raw.githack.com/jeromeetienne/AR.js /2.0.5/aframe/build/aframe-ar.js"> </script>
+<head>
+<meta charset="utf-8">
+<style>
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Убираем отступы */
+    height: 100%; /* Высота страницы */
+    background: url(images/river.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+}
 
-<body style ='margin: 0px; overflow: scroll;'> 
-  <a-scene embedded arjs='patternRatio:0.7' > 
-    <a-marker type='pattern' url='pattern.patt'> 
-       
-      <a-image src="1.png" width = "1"  height = "1" position="0 0.01 0" rotation='270 0 0'></a-image>
-      <a-image src="2.png" width = "1"  height = "1" position="0 0.05 0" rotation='270 0 0'></a-image>
-      <a-gltf-model src="00.gltf" scale="0.3 0.3 0.3" ></a-gltf-model>
-      <a-image src="3.png" width = "1"  height = "1" position="0 0.10 0" rotation='270 0 0'></a-image>
-      <a-image src="4.png" width = "1"  height = "1" position="0 0.15 0" rotation='270 0 0'></a-image>
-      <a-image src="5.png" width = "1"  height = "1" position="0 0.20 0" rotation='270 0 0'></a-image>
-      <a-image src="6.png" width = "1"  height = "1" position="0 0.25 0" rotation='270 0 0'></a-image>
-      
-    </a-marker>
-    <a-entity camera> </a-entity> 
-  </a-scene> 
-</body>    
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("bg.jpg");
+   
+
+    min-height: 1920px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    left: 30px;
+    top: 290px;
+    margin: 10px;
+    max-width: 1920px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #5E4099;
+    border-radius: 50px;
+    color: #5E4099; /* White text */
+    padding: 25px 25px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 32px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
     
+    .text-block {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 45px;
+ } 
+    h4 {margin-bottom: -15px; /* Отрицательный отступ между заголовком и текстом */}
+     
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+    
+    <div class="text-block"><h4>Открытки Новогодние</h4><p>Мастер класс от Селивановой О.И.</p> </div> 
+    
+    <div class="container">
+    <form action="AR1"><button class="btn"><b>01 Селиванова Ольга</b></button></form>.
+    <form action="AR2"><button class="btn"><b>02 Участник</b></button></form>.
+    <form action="AR3"><button class="btn"><b>03 Участник</b></button></form>.
+    <form action="AR4"><button class="btn"><b>04 Участник</b></button></form>.
+    <form action="AR5"><button class="btn"><b>05 Участник</b></button></form>.
+    <form action="AR6"><button class="btn"><b>06 Участник</b></button></form>.
+    <form action="AR7"><button class="btn"><b>07 Участник</b></button></form>.
+    <form action="AR8"><button class="btn"><b>08 Участник</b></button></form>.
+    <form action="AR9"><button class="btn"><b>09 Участник</b></button></form>.
+    <form action="AR10"><button class="btn"><b>10 Участник</b></button></form>.
+    <form action="AR11"><button class="btn"><b>11 Участник</b></button></form>.
+    </div>
+</div>
+
+</body>
 </html>
