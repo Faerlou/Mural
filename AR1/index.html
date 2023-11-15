@@ -25,7 +25,12 @@ div {
    </style>
 
 <body style ='margin: 0px; overflow: scroll;'> 
-  <a-scene embedded arjs='patternRatio:0.7' > 
+  <a-scene embedded arjs='patternRatio:0.7' >
+       
+        <div>
+  <a class="button" href="https://faerlou.github.io/ARNY">НАЗАД</a>
+  </div>
+       
     <a-marker type='pattern' url='pattern.patt'> 
        
       <a-image src="1.png" width = "1"  height = "1" position="0 0.02 0" rotation='270 0 0'></a-image>
@@ -37,12 +42,7 @@ div {
       <a-image src="6.png" width = "1"  height = "1" position="0 0.39 0" rotation='270 0 0'></a-image>
       
     </a-marker>
-    <a-entity camera> </a-entity>
-
-  <div>
-  <a class="button" href="https://faerlou.github.io/ARNY">НАЗАД</a>
-  </div>
-     
+    <a-entity camera> </a-entity>  
   </a-scene>
          
 </body>    
